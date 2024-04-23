@@ -1,2 +1,2 @@
-# kbot-helm
-kbot-helm
+# kbot
+Telegram-бот
