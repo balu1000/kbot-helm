@@ -1,0 +1,18 @@
+# Default values for helm-a.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: balu1000
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "1.1.6-2a4656b-linux-amd64"
+  arch: amd64
+
+secret:
+  name: kbot
+  env: TELE_TOKEN  
+  key: token
+securityContext:
+  privileged: true  
